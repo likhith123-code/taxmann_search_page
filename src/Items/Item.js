@@ -9,7 +9,7 @@ const Item = (props) => {
         <div class="card">
             <div class="container">
                 <h3> Score: {props.data.score} </h3>
-                <p> {props.data.data}</p>
+                <p> {truncatedContent}</p>
                 <Link to={{ pathname: `/searchResults/${props.data.id}`, data: props.data }}>...Read More</Link>
             </div>
         </div>
